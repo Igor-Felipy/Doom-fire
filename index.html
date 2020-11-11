@@ -3,6 +3,15 @@
 <head>
     <title>fogo do doom</title>
     <style>
+        body {
+            background-image: url(./Doom.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
         table {
             border-collapse: collapse;
             border: 1px solid #000;
@@ -23,7 +32,6 @@
             height: 20px;
             border: 0;
         }
-        
         .pixel-index {
             font-size: 10px;
             display: inline-block;
@@ -32,11 +40,26 @@
             right: 2px;
             color: #999;
         }
+        button {
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            font-size: 30px;
+            font-weight: 800;
+        }
         
     </style>
 </head>
 <body>
-    <div id="fireCanvas"></div>
-    <script src="fire.js"></script>    
+    <center>
+        <h1>Doom Fire Algorithm</h1>
+        <div id="fireCanvas"></div>
+        <button onclick="increaseFireSource()">+</button>
+        <button onclick="createFireSource()">Turn On</button>
+        <button onclick="destroyFireSource()">Turn Off</button>
+        <button onclick="decreaseFireSource()">-</button>
+    </center>
+    <script src="fire.js"></script>        
 </body>
 </html>
